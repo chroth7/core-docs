@@ -44,7 +44,7 @@ const client = new ApolloClient({
 
 <h3 id="networkInterfaceMiddleware" title="Middleware">Middleware</h3>
 
-It is possible to use middleware with the network interface created via `createNetworkInterface`. Middleware is used to inspect and modify every request made over the `netWorkInterface`, for example, adding authentication tokens to every query. In order to add middleware, you must pass an array of objects into the interface created with `createNetworkInterface()`.  Each object must contain an `applyMiddleware` method with the following parameters:
+It is possible to use middleware with the network interface created via `createNetworkInterface`. Middleware is used to inspect and modify every request made over the `networkInterface`, for example, adding authentication tokens to every query. In order to add middleware, you must pass an array of objects into the interface created with `createNetworkInterface()`.  Each object must contain an `applyMiddleware` method with the following parameters:
 
 - `req: object` The HTTP request being processed by the middleware.
 - `next: function` This function pushes the HTTP request onward through the middleware.
